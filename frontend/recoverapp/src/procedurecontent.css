@@ -1,0 +1,22 @@
+/* Procedure Content box Styles */
+
+.procedure-label {
+  font-weight: 500;
+}
+
+.procedure-status {
+  font-size: 0.85rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.25rem;
+  text-transform: capitalize;
+}
+
+.procedure-status.published {
+  background-color: #d1fae5; /* green-100 */
+  color: #065f46; /* green-800 */
+}
+
+.procedure-status.draft {
+  background-color: #fef3c7; /* yellow-100 */
+  color: #92400e; /* yellow-800 */
+}

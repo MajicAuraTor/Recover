@@ -1,0 +1,45 @@
+/* navbar.css */
+
+/* Navbar container fixed to top, but pushed right of the sidebar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 256px;                     /* <-- push it over */
+  width: calc(96% - 256px);    /* <-- shrink it to fit */
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  z-index: 1000;
+}
+
+
+
+/* Left side: greeting and subtitle */
+.navbar-left h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.navbar-left p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #666666;
+}
+
+/* Right side: search input */
+.navbar-right .navbar-search {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  border: 1px solid #cccccc;
+  border-radius: 0.25rem;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.navbar-right .navbar-search:focus {
+  border-color: #888888;
+}

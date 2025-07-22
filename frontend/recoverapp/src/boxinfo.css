@@ -1,0 +1,37 @@
+/* boxinfo.css */
+
+.box-info {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.box-info li {
+  background-color: #f1f5f9; /* Tailwind's slate-100 */
+  padding: 1rem;
+  border-radius: 0.5rem;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.box-info i {
+  font-size: 2rem;
+  color: #2563eb; /* Tailwind's blue-600 */
+}
+
+.box-info .text h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.box-info .text p {
+  margin: 0;
+  font-size: 0.875rem;
+  color: #64748b; /* Tailwind's slate-500 */
+}

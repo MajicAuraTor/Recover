@@ -1,0 +1,188 @@
+/* --- Variables for easy tweaking --- */
+:root {
+  --primary:  #3b82f6;
+  --primary-dark: #2563eb;
+  --bg-light: #ffffff;
+  --bg-dark:  #2d2d2d;
+  --text-light: #333333;
+  --text-dark:  #f0f0f0;
+  --input-bg:   #f3f4f6;
+  --input-bg-dark: #444444;
+  --border:    #cccccc;
+  --border-dark:  #555555;
+}
+
+/* --- Full‑screen wrapper --- */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+  background: linear-gradient(to bottom right, #3b82f6, #60a5fa);
+  position: relative;
+  transition: background 0.3s;
+}
+
+/* Align form fields to the left */
+.form-container {
+  text-align: left;
+  padding-left: 1rem;
+  padding-right: 2rem; /* Adjust as needed */
+}
+
+
+.dark .login-container {
+  background: linear-gradient(to bottom right, #1f2937, #374151);
+}
+
+/* --- Dark Mode Toggle Button --- */
+.dark-mode-toggle {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: transparent;
+  border: 2px solid #ccc;
+  color: inherit;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode-toggle:hover {
+  background-color: #eee;
+}
+
+/* --- Card --- */
+.login-card {
+  background: var(--bg-light);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  max-width: 400px;
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+  transition: background 0.3s, transform 0.2s;
+}
+.login-card:hover {
+  transform: scale(1.02);
+}
+.dark .login-card {
+  background: var(--bg-dark);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+}
+
+/* --- Logo & Title --- */
+.login-card img {
+  width: 64px;
+  height: 64px;
+}
+.login-card h1 {
+  margin: 1rem 0 0.25rem;
+  font-size: 1.75rem;
+  color: var(--text-light);
+  transition: color 0.3s;
+}
+.dark .login-card h1 {
+  color: var(--text-dark);
+}
+.login-card p {
+  margin: 0 0 1.5rem;
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+.dark .login-card p {
+  color: #9ca3af;
+}
+
+/* --- Form elements --- */
+.form-group {
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-size: 0.875rem;
+  color: var(--text-light);
+  transition: color 0.3s;
+}
+.dark .form-group label {
+  color: var(--text-dark);
+}
+.form-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 9999px;
+  background: var(--input-bg);
+  font-size: 0.875rem;
+  transition: border-color 0.2s, background 0.3s, color 0.3s;
+}
+.form-input:focus {
+  border-color: var(--primary);
+  outline: none;
+}
+.dark .form-input {
+  background: var(--input-bg-dark);
+  border-color: var(--border-dark);
+  color: #f3f4f6;
+}
+
+/* --- Reset link --- */
+.reset-link {
+  display: inline-block;
+  margin-top: 0.25rem;
+  font-size: 0.75rem;
+  color: var(--primary);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.reset-link:hover {
+  text-decoration: underline;
+}
+.dark .reset-link {
+  color: #60a5fa;
+}
+
+/* --- Buttons --- */
+.btn-primary {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #fff;
+  background: var(--primary);
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: background 0.3s, box-shadow 0.2s;
+}
+.btn-primary:hover {
+  background: var(--primary-dark);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.dark .btn-primary {
+  background: var(--primary-dark);
+}
+.dark .btn-primary:hover {
+  background: #1e40af;
+}
+
+.btn-secondary {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: #fff;
+  background: skyblue;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.btn-secondary:hover {
+  opacity: 0.9;
+}

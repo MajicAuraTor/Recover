@@ -1,0 +1,93 @@
+/* === Layout Containers === */
+.app-container {
+  display: flex;
+  height: 100vh;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.main-content {
+  margin-left: 266px; /* Same as sidebar width */
+  padding-top: 10rem;  /* To clear navbar */
+  position: relative;
+  z-index: 1;
+  overflow: auto;     /* Ensure content is scrollable if needed */
+}
+
+/* === Dashboard Grid === */
+.dashboard-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding-top: 1rem;
+}
+
+/* === Dashboard Box === */
+.dashboard-box {
+  flex: 1 1 calc(50% - 16px);
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  margin-bottom: 1.5rem;
+}
+
+.dashboard-box h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+  color: #1e293b;
+}
+
+.dashboard-box ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.dashboard-box li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* === Dark Mode === */
+.dark-mode {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+.dark-mode .dashboard-box {
+  background-color: rgb(75, 158, 210);
+  color: #f0f0f0;
+  border: 1px solid #444;
+}
+
+.dark-mode-toggle {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: #0078d4;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.dark-mode .dark-mode-toggle {
+  background-color: #444;
+  color: #fff;
+}
+
+.dark-mode header {
+  background-color: #2c2c2c;
+  color: #f0f0f0;
+  border-bottom: 1px solid #444;
+}
+
+.dark-mode header input[type="text"] {
+  background-color: #444;
+  color: #fff;
+  border: 1px solid #666;
+}
+
