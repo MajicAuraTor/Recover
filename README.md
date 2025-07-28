@@ -7,3 +7,4 @@ A patient‑centered pre‑ and post‑op care app built with React, Node.js, an
 ```bash
 npm install
 npm run dev
+```
